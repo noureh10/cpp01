@@ -1,0 +1,41 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nechaara <nechaara@student.s19.be>         +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/08/01 14:35:01 by nechaara          #+#    #+#              #
+#    Updated: 2024/08/01 16:26:31 by nechaara         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = bryan
+
+SRCS = main.cpp
+OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
+OBJ_DIR = objects
+FLAGS = -std=c++98 -Wall -Wextra -Werror -O2
+
+all : $(NAME)
+
+$(NAME) : $(OBJS)
+	@c++ $(FLAGS) $(OBJS) -o $(NAME)
+	@echo "$(NAME) created successfully !"
+	@echo "use it this way : $(NAME)"
+	
+
+$(OBJ_DIR)/%.o: %.cpp
+	@mkdir -p $(OBJ_DIR)
+	@c++ $(FLAGS) -c $< -o $@
+
+clean:
+	@rm -rf $(OBJ_DIR)
+	@echo "Cleaned object files." 
+fclean: clean
+	@rm -f $(NAME)
+	@echo "Cleaned executable."
+
+re: fclean all
+
+.PHONY: all clean fclean re
