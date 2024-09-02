@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nechaara <nechaara@student.s19.be>         +#+  +:+       +#+         #
+#    By: nechaara <nechaara.student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/17 19:49:08 by nechaara          #+#    #+#              #
-#    Updated: 2024/07/23 14:01:18 by nechaara         ###   ########.fr        #
+#    Updated: 2024/09/02 11:58:52 by nechaara         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = zombie
 OBJ_DIR = objects
 SRCS = Zombie.cpp main.cpp randomChump.cpp newZombie.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
-FLAGS = -std=c++98 -Wall -Wextra -Werror #-fsanitize=address
+FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all : $(NAME)
 
