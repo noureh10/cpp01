@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nechaara <nechaara@student.s19.be>         +#+  +:+       +#+        */
+/*   By: nechaara <nechaara.student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 00:51:11 by nechaara          #+#    #+#             */
-/*   Updated: 2024/08/15 12:30:26 by nechaara         ###   ########.fr       */
+/*   Updated: 2024/09/02 12:11:51 by nechaara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int main(int ac, char **av) {
 			}
 		}	
 	} else {
-		errorHandler("[ Even Harl can compute how stupid you are ]");
+		errorHandler("[ Even Harl can't compute how stupid you are ]");
 		return (1);
 	}
 	
