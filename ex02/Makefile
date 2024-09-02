@@ -3,19 +3,19 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nechaara <nechaara@student.s19.be>         +#+  +:+       +#+         #
+#    By: nechaara <nechaara.student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/01 14:35:01 by nechaara          #+#    #+#              #
-#    Updated: 2024/08/01 16:26:31 by nechaara         ###   ########.fr        #
+#    Updated: 2024/09/02 11:58:43 by nechaara         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = bryan
+NAME = brain
 
 SRCS = main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
 OBJ_DIR = objects
-FLAGS = -std=c++98 -Wall -Wextra -Werror -O2
+FLAGS = -std=c++98 -Wall -Wextra -Werror
 
 all : $(NAME)
 
